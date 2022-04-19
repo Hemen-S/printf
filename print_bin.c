@@ -28,7 +28,7 @@ void print_bin(unsigned int n)
 {
 	int *d;
 
-	unsigned int i;
+	int i;
 	printf("num digits = %d\n", bin_digits(n));
 
 	d = (int *)malloc(sizeof(int) *  bin_digits(n));

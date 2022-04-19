@@ -47,7 +47,6 @@ void print_num(int n)
 		else
 		{
 			_putchar((n % 10) + '0');
-			return (nn);
 		}
 	}
 }
@@ -60,7 +59,7 @@ void print_num(int n)
  */
 int print_n(const va_list ls)
 {
-	int n;
+	int p;
 	int count;
 
 	count = 0;

@@ -56,7 +56,7 @@ int print_modulo(const va_list __attribute__((unused)) list)
  */
 int _printf(const char *format, ...)
 {
-	char fmt[] = {'c', 's', '%', 'd', 'i'};
+	char fmt[] = {'c', 's', '%', 'd', 'i', 'b'};
 	va_list args;
 	int i, j, count, flag;
 

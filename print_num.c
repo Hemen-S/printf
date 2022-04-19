@@ -59,7 +59,7 @@ void print_num(int n)
  */
 int print_n(const va_list ls)
 {
-	int p;
+	int n;
 	int count;
 
 	count = 0;

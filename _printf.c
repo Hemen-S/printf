@@ -61,7 +61,7 @@ int _printf(const char *format, ...)
 	int i, j, count, flag;
 
 	int (*fp[])(const va_list) = {print_char, print_string,
-		print_modulo, print_n, print_n};
+		print_modulo, print_n, print_n, print_b};
 
 	va_start(args, format);
 	i = j = count = flag = 0;
@@ -78,9 +78,9 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			while (format[i + 1] != fmt[j] && j < 5)
+			while (format[i + 1] != fmt[j] && j < 6)
 				j++;
-			if (j < 5)
+			if (j < 6)
 			{
 				flag = fp[j](args);
 				if (flag == -1)

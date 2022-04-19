@@ -20,7 +20,7 @@ int print_char(const va_list a)
  * Return: length of char
  */
 
-int print_(const va_list b)
+int print_string(const va_list b)
 {
 	char *r;
 	int count = 0;

@@ -37,6 +37,25 @@ int print_string(const va_list b)
 	return (count);
 }
 /**
+ * len - length of char
+ * @s: char
+ *
+ * Return: length
+ */
+int len(const char *s)
+{
+	int i;
+
+	i = 0;
+	while (s[i])
+	{
+		i++;
+	}
+
+	return (i);
+}
+
+/**
  * print_modulo - print %
  * @list: int
  *
@@ -56,7 +75,7 @@ int print_modulo(const va_list __attribute__((unused)) list)
  */
 int _printf(const char *format, ...)
 {
-	char fmt[] = {'c', 's', '%', 'd', 'i'};
+	char fmt[] = {'c', 's', '%', 'd', 'i', 'b'};
 	va_list args;
 	int i, j, count, flag;
 

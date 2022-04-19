@@ -26,7 +26,7 @@ unsigned int bin_digits(unsigned int n)
  */
 void print_bin(unsigned int n)
 {
-	int *d;
+	unsigned int *d;
 
 	int i;
 	printf("num digits = %d\n", bin_digits(n));
